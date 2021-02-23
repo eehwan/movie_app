@@ -1,7 +1,9 @@
 function Header() {
     return (
         <div className="Header">
-            Movie App
+            <p>
+                Movie App
+            </p>
             <a
             href="https://github.com/eehwan"
             target="_blank"

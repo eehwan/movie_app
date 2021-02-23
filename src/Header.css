@@ -1,0 +1,19 @@
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
+.Header p {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 40%;
+    font-size: 2em;
+    font-weight: 800;
+}
+.Header a {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #61dafb;
+}

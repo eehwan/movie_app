@@ -1,5 +1,7 @@
 import './reset.css';
 import './App.css';
+import './Header.css'
+import './Movies.css'
 import React from 'react';
 import Header from './Header';
 import Movie from './Movie';
@@ -27,23 +29,28 @@ class App extends React.Component {
   }
   render() {
     const { movies, isLoaded } = this.state
-    return <div className="App">
-            <Header />
-              <div className="Movies">
-                {isLoaded
-                ? movies.map(movie => 
-                  <Movie
-                    key={movie.id}
-                    id={movie.id}
-                    year={movie.year}
-                    title={movie.title}
-                    summary={movie.summary}
-                    poster={movie.medium_cover_image}
-                  />
-                  )
-                : "loading..." }
-              </div>
+    return  (
+      <div className="App">
+        <Header />
+          <div className="Movies">
+            {isLoaded
+            ? movies.map(movie => 
+              <Movie
+                key={movie.id}
+                id={movie.id}
+                year={movie.year}
+                title={movie.title}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+                genres={movie.genres}
+              />
+              )
+            :<div className="loader">
+                loading...
+              </div>}
           </div>
+      </div>
+      );
   }
 }
 
