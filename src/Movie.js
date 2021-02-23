@@ -10,7 +10,7 @@ function Movie({id, year, title, summary, poster, genres}) {
                 </div>
                 <ul className="movie__genres">{genres.map((genre, i)=><li key={i}>{genre}</li>)}</ul>
                 <div className="movie__summary">
-                    {summary.slice(0, 250)}...
+                    {summary.length>250 ? summary.slice(0, 250)+"...": summary}
                 </div>
             </div>
         </div>

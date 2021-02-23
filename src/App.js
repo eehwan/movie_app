@@ -32,9 +32,9 @@ class App extends React.Component {
     return  (
       <div className="App">
         <Header />
-          <div className="Movies">
-            {isLoaded
-            ? movies.map(movie => 
+        {isLoaded
+        ? <div className="Movies">
+            {movies.map(movie => 
               <Movie
                 key={movie.id}
                 id={movie.id}
@@ -44,13 +44,15 @@ class App extends React.Component {
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
               />
-              )
-            :<div className="loader">
-                loading...
-              </div>}
+            )}
           </div>
+        : <div className="loader">
+            <p>
+              loading...
+            </p>
+          </div>}
       </div>
-      );
+    );
   }
 }
 
