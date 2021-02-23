@@ -3,7 +3,6 @@ import './App.css';
 import React from 'react';
 import Header from './Header';
 import Movie from './Movie';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 
 const fetchUri = "https://yts-proxy.now.sh/list_movies.json";
