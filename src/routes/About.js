@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
     <div className='About'>
-      <div>About this page : I built it because I love movies !!&nbsp;</div>
+      <div>I made this website to try using front-end Framework.<br></br>This website is using reactJS for front-end Framework.</div>
     </div>
     );
   };
