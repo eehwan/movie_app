@@ -1,0 +1,31 @@
+@keyframes showNavi {
+    0% {
+        opacity: 0;
+    } 
+    15% {
+        transform: translateX(120px);
+        opacity: 0.98;
+    }
+    100% {
+        translate: translateX(120px);
+        opacity: 0.98;
+    }
+}
+.Navigation {
+    position: fixed;
+    opacity: 0;
+    width: 150px;
+    height: 100vh;
+    max-height: 100%;
+    left: -120px;
+    /* transform: translateX(-100px); */
+    background-color: #00050f;
+    z-index: 10;
+    color: #f0f0f0;
+}
+.Navigation:hover {
+    opacity: 0.98;
+    left: 0;
+    transition: all 1s;
+    /* animation-name: showNavi 1s forwards; */
+}
