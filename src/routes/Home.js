@@ -16,7 +16,6 @@ class Home extends Component {
         data: { movies }
       }
     } = await axios.get(fetchUri);
-    console.log(movies);
     this.setState({ movies, isLoaded: true });
   };
 
