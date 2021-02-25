@@ -2,7 +2,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
+    width: 100%;
+    min-width: 600px;
 }
 .Header p {
     display: inline-block;
@@ -10,10 +11,12 @@
     padding: 1rem 40%;
     font-size: 2em;
     font-weight: 800;
+    white-space: nowrap;
 }
 .Header a {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    color: #61dafb;
+    font-weight: 500;
+    color: #61dafb !important;
 }

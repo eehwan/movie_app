@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 body,
-.App {
+.Home {
   min-width: 650px;
   height: 100%;
   display: flex;
@@ -22,4 +22,13 @@ body,
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+}
+.Movies {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-top: 8rem;
+  width: 90%;
 }
