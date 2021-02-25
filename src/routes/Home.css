@@ -16,10 +16,10 @@
 }
 .Movies {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 20px;
   padding-top: 8rem;
-  width: 90%;
+  width: 95%;
 }
