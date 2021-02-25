@@ -3,9 +3,17 @@ import './Detail.css'
 
 class About extends Component {
     componentDidMount() {
-        console.log(this.props);
+      // 잘못 접근시 redirect
+      const { location, history } = this.props;
+      if (location.state === undefined) {
+        history.push("/");
       }
+    } 
     render() {
+      const state = this.props.location.state;
+      if (!state) {
+        return null
+      }
       const {
           id,
           year,
@@ -13,7 +21,7 @@ class About extends Component {
           summary,
           poster,
           genres
-        } = this.props.location.state;
+        } = state;
       return (
         <div className="Detail">
             <div className="top">
