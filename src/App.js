@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Navigation from './components/Navigation'
 import Home from './routes/Home';
 import About from './routes/About';
+import Detail from './routes/Detail';
+import './App.css';
+import './reset.css';
 
 class App extends Component {
     render() {
@@ -13,6 +16,7 @@ class App extends Component {
                 <Navigation />
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
+                <Route path="/detail" component={Detail} />
             </HashRouter>
         );
     }
