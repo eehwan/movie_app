@@ -15,6 +15,7 @@ function Navigation() {
                     Github Link
                 </a>
             </div>
+            <div className="handle"></div>
         </div>
     )
 };

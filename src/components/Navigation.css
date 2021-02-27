@@ -1,29 +1,48 @@
 .Navigation {
     position: fixed;
-    opacity: 0;
-    width: 180px;
+    opacity: 0.98;
+    width: 200px;
     height: 100vh;
     max-height: 100%;
     top: 0;
-    left: -120px;
+    left: -200px;
     background-color: #00050f;
     color: #f0f0f0;
     z-index: 10;
 }
 .Navigation:hover {
-    opacity: 0.95;
     left: 0;
+    transition: all 1s;
+}
+.Navigation:hover .handle{
+    left: 100px;
+    opacity: 0;
+    transition: all .5s;
+}
+.Navigation:hover ~ .dimmed{
+    opacity: 0.45;
     transition: all 1s;
 }
 .Navigation .inner {
     position: absolute;
-    top: 100px;
+    top: 25%;
     left: 25px;
     display: flex;
     flex-direction: column;
 }
 .Navigation .inner a {
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 7vh;
     font-size: 1.3em;
+    cursor: pointer;
+}
+.Navigation .handle{
+    position: absolute;
+    top: 45%;
+    left: 170px;
+    width: 70px;
+    padding: 30px;
+    border-radius: 20px;
+    height: 100px;
+    background-color: #00050f;
 }
